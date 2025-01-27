@@ -11,6 +11,48 @@ require "mechanize"
 
 # Scrape civica websites
 module CivicaScraper
+  MORPH_SCRAPER = "multiple_civica"
+
+  # Report public IP once
+  def self.public_ip(agent)
+    @public_ip ||=
+      begin
+        ip = agent.get("https://whatismyip.akamai.com/").body.strip
+        puts "Public IP: #{ip}"
+        ip
+      end
+  end
+
+  # Returns AUTHORITIES or all if not set (with validation)
+  def self.selected_authorities
+    if ENV["AUTHORITIES"]
+      authorities = ENV["AUTHORITIES"].split(",").map(&:strip).map(&:to_sym)
+      invalid = authorities - AUTHORITIES.keys
+      raise "Invalid authorities specified: #{invalid.join(', ')}" unless invalid.empty?
+
+      authorities
+    else
+      AUTHORITIES.keys
+    end
+  end
+
+  def self.debug_request(method, url, parameters = nil, headers = nil, body = nil)
+    return unless ENV["DEBUG"]
+
+    puts "\n🔍 #{method.upcase} #{url}"
+    if parameters
+      puts "Parameters:"
+      puts JSON.pretty_generate(parameters)
+    end
+    if headers
+      puts "Headers:"
+      puts JSON.pretty_generate(headers)
+    end
+    return unless body
+
+    puts "Body:"
+    puts JSON.pretty_generate(body)
+  end
   def self.scrape_and_save(authority)
     scrape(authority) do |record|
       save(record)

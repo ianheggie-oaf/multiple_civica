@@ -12,7 +12,7 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - Mechanize/2.7.6 Ruby/2.5.1p57 (http://github.com/sparklemotion/mechanize/)
+      - Mechanize/2.7.7 Ruby/2.5.1p57 (http://github.com/sparklemotion/mechanize/)
       Accept-Charset:
       - ISO-8859-1,utf-8;q=0.7,*;q=0.7
       Accept-Language:
@@ -25,66 +25,111 @@ http_interactions:
       - '300'
   response:
     status:
-      code: 200
-      message: OK
+      code: 500
+      message: Internal Server Error
     headers:
       Date:
-      - Sun, 07 Jul 2019 19:57:28 GMT
-      Server:
-      - Apache/2.2.15 (CentOS)
-      Strict-Transport-Security:
-      - max-age=15768000
-      Pragma:
-      - No-cache
-      Cache-Control:
-      - no-cache,no-store,max-age=0,must-revalidate,proxy-revalidate
-      Expires:
-      - '0'
-      Set-Cookie:
-      - JSESSIONID_live=0000QuRT8vRHPF6I7vb_36IJTX9:-1; Path=/
-      Connection:
-      - close
+      - Mon, 27 Jan 2025 18:57:27 GMT
+      Content-Type:
+      - text/html
       Transfer-Encoding:
       - chunked
-      Content-Type:
-      - text/html; charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,max-age=0,must-revalidate,proxy-revalidate
+      Pragma:
+      - No-cache
       Content-Language:
       - en-AU
+      Expires:
+      - '0'
+      X-Powered-By:
+      - Servlet/3.1
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Security-Policy:
+      - 'default-src ''self'' https://transact.nab.com.au https://demo.transact.nab.com.au
+        https://sec.paymentexpress.com https://uat.paymentexpress.com https://payment.securepay.com.au
+        https://test.payment.securepay.com.au https://bpoint.com.au https://bpoint-uat.premier.com.au
+        https://secure.flo2cash.co.nz https://demo.flo2cash.co.nz; frame-src ''self''
+        https://www.google.com http://www.google.com; script-src ''self'' https://www.google.com
+        http://www.google.com https://www.gstatic.com http://www.gstatic.com https://maps.googleapis.com
+        http://maps.googleapis.com ''unsafe-inline'' ''unsafe-eval''; connect-src
+        ''self''; img-src ''self'' data: ''unsafe-eval'' https://www.paypalobjects.com
+        http://www.paypalobjects.com https://www.paypal.com http://www.paypal.com
+        https://maps.gstatic.com http://maps.gstatic.com https://maps.googleapis.com
+        http://maps.googleapis.com; style-src ''self'' https://fonts.googleapis.com
+        http://fonts.googleapis.com https://fonts.googleapis.com http://fonts.googleapis.com
+        ''unsafe-inline''; base-uri ''self''; form-action ''self'' https://www.paypal.com
+        http://www.paypal.com https://www.sandbox.paypal.com http://www.sandbox.paypal.com
+        https://sec.paymentexpress.com https://transact.nab.com.au/directpost/authorise
+        https://demo.transact.nab.com.au/directpost/authorise; font-src ''self'' https://fonts.googleapis.com
+        http://fonts.googleapis.com https://fonts.gstatic.com http://fonts.gstatic.com;
+        object-src data: ''unsafe-eval'';'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      "$wsep":
+      - ''
+      Set-Cookie:
+      - JSESSIONID_live=0000M82inVuy0WV05IJ-sbhU-TC:-1; Path=/; HttpOnly
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=50Kz%2FHN%2BQOnlya4CB9U30cID4lmsYAixMLxHoQkP46CRzJW3%2BSyMepxtact5l7Y4WSItgV743MFLNek%2FMH%2Fy316st1%2BVE0zJPP1QRQtIWSISa9NXRPvvoHGWIr4bCe5omBqDNzYbjsHV1a4T8eObYAdwf%2FA7UMOT"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 908af7f08fffe6eb-MEL
+      Server-Timing:
+      - cfL4;desc="?proto=TCP&rtt=9879&min_rtt=7377&rtt_var=3779&sent=5&recv=7&lost=0&retrans=0&sent_bytes=2812&recv_bytes=964&delivery_rate=348110&cwnd=252&unsent_bytes=0&cid=5e8e046b167c1079&ts=263&x=0"
     body:
       encoding: UTF-8
-      string: "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n    \r\n        \r\n\t        \r\n
-        \       \r\n          \r\n  \r\n\r\n\r\n\r\n      \r\n      \r\n\r\n\r\n\r\n
-        \     \r\n\t  \r\n      \r\n      \r\n\r\n\r\n\r\n    \r\n    \r\n        \r\n
-        \       \r\n    \r\n\r\n\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\"
-        \"http://www.w3.org/TR/html4/strict.dtd\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<html
-        lang=\"en-US\">\r\n\t<head>\r\n\t\t<meta http-equiv=\"Content-Type\" content=\"text/html;
-        charset=UTF-8\" />\r\n\t\t<meta name=\"viewport\" content=\"width=device-width,
-        initial-scale=1, maximum-scale=1\" />\r\n\t\t<title>\r\n\t\t\tOrange *live*
-        10 Nov\r\n\t\t</title>\r\n\t\t<link rel=\"stylesheet\" href=\"/eservice/library/bootstrap-335.min.css\"
+      string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html
+        xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\"
+        content=\"text/html; charset=iso-8859-1\"/>\r\n<title>500 - Internal server
+        error.</title>\r\n<style type=\"text/css\">\r\n<!--\r\nbody{margin:0;font-size:.7em;font-family:Verdana,
+        Arial, Helvetica, sans-serif;background:#EEEEEE;}\r\nfieldset{padding:0 15px
+        10px 15px;} \r\nh1{font-size:2.4em;margin:0;color:#FFF;}\r\nh2{font-size:1.7em;margin:0;color:#CC0000;}
+        \r\nh3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} \r\n#header{width:96%;margin:0
+        0 0 0;padding:6px 2% 6px 2%;font-family:\"trebuchet MS\", Verdana, sans-serif;color:#FFF;\r\nbackground-color:#555555;}\r\n#content{margin:0
+        0 0 2%;position:relative;}\r\n.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}\r\n-->\r\n</style>\r\n</head>\r\n<body>\r\n<div
+        id=\"header\"><h1>Server Error</h1></div>\r\n<div id=\"content\">\r\n <div
+        class=\"content-container\"><fieldset>\r\n  <h2>500 - Internal server error.</h2>\r\n
+        \ <h3>There is a problem with the resource you are looking for, and it cannot
+        be displayed.</h3>\r\n </fieldset></div>\r\n</div>\r\n</body>\r\n</html>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n
+        \     \r\n\r\n      \r\n     \r\n    \r\n  \r\n\r\n  \r\n\r\n<!DOCTYPE HTML
+        PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"  \"http://www.w3.org/TR/html4/loose.dtd\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<html
+        lang=\"en-US\">\r\n\t<head>\r\n\t\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"
+        />\r\n\t\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"
+        />\r\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1,
+        maximum-scale=1\" />\r\n\t\t<title>\r\n\t\t\tOrange *live* 10 Nov\r\n\t\t</title>\r\n\t\t<link
+        rel=\"stylesheet\" href=\"/eservice/library/bootstrap-3.4.1.min.css\" type=\"text/css\"
+        media=\"screen, projection, print\" >\r\n<link rel=\"stylesheet\" href=\"/eservice/library/jquery-ui.min.css\"
         type=\"text/css\" media=\"screen, projection, print\" >\r\n<link rel=\"stylesheet\"
-        href=\"/eservice/library/jquery-ui.min.css\" type=\"text/css\" media=\"screen,
-        projection, print\" >\r\n<link rel=\"stylesheet\" href=\"/eservice/library/jquery-ui.structure.min.css\"
+        href=\"/eservice/library/jquery-ui.structure.min.css\" type=\"text/css\" media=\"screen,
+        projection, print\" >\r\n<link rel=\"stylesheet\" href=\"/eservice/library/jquery-ui.theme.min.css\"
         type=\"text/css\" media=\"screen, projection, print\" >\r\n<link rel=\"stylesheet\"
-        href=\"/eservice/library/jquery-ui.theme.min.css\" type=\"text/css\" media=\"screen,
-        projection, print\" >\r\n<link rel=\"stylesheet\" href=\"/eservice/library/e-services.css\"
+        href=\"/eservice/library/e-services.css\" type=\"text/css\" media=\"screen,
+        projection, print\" >\r\n<link rel=\"stylesheet\" href=\"/eservice/library/calendar.css\"
         type=\"text/css\" media=\"screen, projection, print\" >\r\n<link rel=\"stylesheet\"
-        href=\"/eservice/library/calendar.css\" type=\"text/css\" media=\"screen,
-        projection, print\" >\r\n<link rel=\"stylesheet\" href=\"/eservice/library/daEnquiry_daEnquiry.css\"
-        type=\"text/css\" media=\"screen, projection\" >\r\n<!--[if IE 6]>\r\n<link
-        rel=\"stylesheet\" href=\"/eservice/library/ie6.css\" type=\"text/css\" media=\"screen,
-        projection\" >\r\n<![endif]-->\r\n<!--[if IE 8]>\r\n<link rel=\"stylesheet\"
-        href=\"/eservice/library/ie8.css\" type=\"text/css\" media=\"screen, projection\"
-        >\r\n<![endif]-->\r\n<link rel=\"stylesheet\" href=\"/eservice/library/e-print.css\"
-        type=\"text/css\" media=\"print\" >\r\n<link rel=\"stylesheet\" href=\"/eservice/library/header-eserv.css\"
-        type=\"text/css\" media=\"screen, projection, print\" >\r\n<link rel=\"stylesheet\"
-        href=\"/council/eservice/occ-eservice.css\" type=\"text/css\" media=\"screen,
-        projection, print\" >\r\n\r\n\t\t<script>var AUTHJS = {};AUTHJS.productName
-        = \"i-Services\";</script>\r\n<script type=\"text/javascript\" src=\"/eservice/jscalendar-1.0/calendar.js\"></script>\r\n<script
-        type=\"text/javascript\" src=\"/eservice/javascript/jquery/jquery-1.11.3.min.js\"></script>\r\n<script>AUTHJS.productName
+        href=\"/eservice/library/e-print.css\" type=\"text/css\" media=\"print\" >\r\n<link
+        rel=\"stylesheet\" href=\"/eservice/library/header-eserv.css\" type=\"text/css\"
+        media=\"screen, projection, print\" >\r\n<link rel=\"stylesheet\" href=\"/council/eservice/occ-eservice.css\"
+        type=\"text/css\" media=\"screen, projection, print\" >\r\n\r\n\t\t<script>var
+        AUTHJS = {};AUTHJS.productName = \"i-Services\";</script>\r\n<script type=\"text/javascript\"
+        src=\"/eservice/jscalendar-1.0/calendar.js\"></script>\r\n<script type=\"text/javascript\"
+        src=\"/eservice/javascript/jquery/jquery-3.6.0.min.js\"></script>\r\n<script>AUTHJS.productName
         = \"e-Services\";</script>\r\n<script type=\"text/javascript\" src=\"/eservice/javascript/tether-1.3.3.js\"></script>\r\n<script
         type=\"text/javascript\" src=\"/eservice/javascript/modernizr-283.min.js\"></script>\r\n<script
-        type=\"text/javascript\" src=\"/eservice/javascript/jquery/bootstrap-335.min.js\"></script>\r\n<script
-        type=\"text/javascript\" src=\"/eservice/javascript/jquery/jquery-ui-datepicker.min.js\"></script>\r\n<script
+        type=\"text/javascript\" src=\"/eservice/javascript/jquery/bootstrap-3.4.1.js\"></script>\r\n<script
+        type=\"text/javascript\" src=\"/eservice/javascript/jquery/jquery-ui.min.js\"></script>\r\n<script
         type=\"text/javascript\" src=\"/eservice/javascript/e-services-page.js\"></script>\r\n<script
         type=\"text/javascript\" src=\"/eservice/javascript/prototype.js\"></script>\r\n<script
         type=\"text/javascript\" src=\"/eservice/javascript/civica.jquery.plugins.js\"></script>\r\n<script
@@ -100,10 +145,9 @@ http_interactions:
         type=\"text/javascript\" src=\"/eservice/javascript/menuScroll.js\"></script>\r\n<script
         type=\"text/javascript\" src=\"/eservice/javascript/sitemap.js\"></script>\r\n<script
         type=\"text/javascript\" src=\"/eservice/javascript/jquery.imageTickBox.js\"></script>\r\n<script
-        type=\"text/javascript\" src=\"/eservice/javascript/jquery.metadata.js\"></script>\r\n\r\n\t\t<link
-        rel=\"shortcut icon\" href=\"favicon.ico\" />\r\n\t\t\r\n\t\t\r\n\t\t\t\t<script
-        src=\"/eservice/javascript/da.js\" type=\"text/javascript\"></script>\r\n\t\t\r\n\t\t\t\t<script
-        src=\"/eservice/javascript/mkTree.js\" type=\"text/javascript\"></script>\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t</head>\r\n\t\r\n\t<body\r\n\t\t\r\n\t>\r\n\t\t\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<script
+        type=\"text/javascript\" src=\"/eservice/javascript/jquery.metadata.js\"></script>\r\n<script
+        type=\"text/javascript\" src=\"/eservice/javascript/jquery/jquery.form-3.46.0.js\"></script>\r\n\r\n\t\t<link
+        rel=\"shortcut icon\" href=\"favicon.ico\" />\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t</head>\r\n\t\r\n\t<body\r\n\t\t\r\n\t>\r\n\t\t\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<script
         type=\"text/javascript\">\r\n\tvar initialTabPage= \"null\";\r\n\tjQuery(document).ready(function()
         {\r\n\t\tif (initialTabPage != \"null\") {\r\n\t\t\tif (initialTabPage==\"sitemap\"){\r\n\t\t\t\tinitialTabPage=\"#sitemap-controller\";
         \   \r\n\t\t\t} else {\r\n\t\t\t\tinitialTabPage=\"#dashboard-controller\";
@@ -115,7 +159,7 @@ http_interactions:
         ) {\r\n\t\t\t\t\tisBootstrapEvent = true;\r\n\t\t\t\t});\r\n\t\t\t});\r\n\t\t}\r\n\t\tvar
         originalHide = Element.hide;\r\n\t\tElement.addMethods({\r\n\t\t\thide: function(element)
         {\r\n\t\t\t\tif(isBootstrapEvent) {\r\n\t\t\t\t\tisBootstrapEvent = false;\r\n\t\t\t\t\treturn
-        element;\r\n\t\t\t\t}\r\n\t\t\t\treturn originalHide(element);\r\n\t\t\t}\r\n\t\t});\r\n\t})();\r\n</script>\r\n\r\n\r\n\r\n<!--
+        element;\r\n\t\t\t\t}\r\n\t\t\t\treturn originalHide(element);\r\n\t\t\t}\r\n\t\t});\r\n\t})();\r\n\t\r\n\t\r\n</script>\r\n\r\n\r\n\r\n<!--
         eServices -->\r\n\r\n\t<div id=\"page\" class=\" tabbed not-logged-in\">\r\n\r\n\t\r\n\r\n\r\n\t\t<div
         id=\"masthead\" class=\"navbar navbar-static-top bs-docs-nav\">\r\n\t\t\t<div
         class=\"container\" id=\"masthead-container\">\r\n\t\t\t\t<div class=\"navbar-header\">\r\n\t\t\t\t\t<a
@@ -132,1049 +176,56 @@ http_interactions:
         are a Guest\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<!--
         masthead User end -->\r\n\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t</div>\r\n\t\t\t\t<!--
         masthead Quicklinks end -->\r\n\t\t\t</div>\r\n\t\t\t<!-- End container -->\r\n\t\t</div>\r\n\t\t<!--
-        End Masthead -->\r\n\r\n\r\n\t\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\t\t<div
-        id=\"bcpanel\">\r\n\t\t\t<div class=\"container\" id=\"bcpanel-container\">\r\n\t\t\t\t\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\t\r\n\t\r\n\t\t\r\n\t\t<ul
-        id=\"breadcrumbs\">\r\n\r\n            \r\n\r\n            \r\n\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\t<li
-        class=\"last-node\">\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t
-        \   \r\n\t\t\t\t\t\t    \r\n\t\t\t            \t    <a href=\"/eservice/daEnquiryInit.do?nodeNum=24\"
-        onclick=\"openSearchResultParent(24);return false;\">Development Applications</a>\r\n\t\t\t
-        \           \t\r\n\t\t\t            \r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t\r\n\t\t</ul>\t\t\t\r\n\t\t\r\n\r\n\r\n\t\t\t</div>\r\n\t\t</div>\r\n\r\n\t\t<!--
-        End Masthead navbar -->\r\n\r\n\r\n\t\t<div id=\"content\">\r\n\r\n\t\t\t<div
-        class=\"container\" id=\"content-container\">\r\n\r\n\t\t\t\t<div class=\"row\"
-        id=\"main-row\">\r\n\r\n\t\t\t\t\t<div class=\"col-sm-3\" id=\"bstrap-leftnav\">\r\n\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<div
+        End Masthead -->\r\n\r\n\r\n\t\r\n\r\n\t\t<!-- End Masthead navbar -->\r\n\r\n\r\n\t\t<div
+        id=\"content\">\r\n\r\n\t\t\t<div class=\"container\" id=\"content-container\">\r\n\r\n\t\t\t\t<div
+        class=\"row\" id=\"main-row\">\r\n\r\n\t\t\t\t\t<div class=\"col-sm-3\" id=\"bstrap-leftnav\">\r\n\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<div
         id=\"search-results\" >\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t</div>  \r\n\t\t\t\t\t\t\r\n\r\n\r\n\t\t\t\t\t\t<div
         id=\"admin-tabs\" >\r\n\t\t\t\t\t\t\t<div id=\"dashboard\" class=\"tabs-content\">\r\n\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\r\n\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<!--
         START MENU CONTENT -->\r\n\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t<div
         id=\"menus-toggle\">\r\n\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div
         id=\"menus-button\" class=\"btn btn-default\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span
         id=\"menus-button-inner\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a id=\"menus-button-link\"
-        href=\"#\">Hide Menus</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t<div
-        id=\"site-access\" class=\"menu-on\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<ul
-        id=\"siteaccesspanel\">\r\n\r\n\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\t\r\n\t\r\n\t\r\n\t\r\n\t\r\n\t\t<li
-        id=\"siteaccesspanel_1\">\r\n\t\t\t<div class=\"menu-group\">\r\n\t\t\t\t<div
-        class=\"menu-header-panel\" title=\"Drag to change panel order\">\r\n\t\t\t\t\t<h3
-        class=\"panel-handle\">Menu</h3>\r\n\t\t\t\t</div>\r\n\t\t\t\t<p class=\"menu-handlers\">\r\n\t\t\t\t\r\n\t\t\t\t<a
-        href=\"/eservice/menu/minimisePanel.do?id=1\" title=\"Minimise Panel\" class=\"panel-min-max\"
-        id=\"panel-min-max-1\" >\r\n<img src=\"/eservice/icons/minimise.gif\" alt=\"Minimise\"
-        />\r\n</a>\r\n\r\n\t\t\t\t</p>\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t<div
-        id=\"menu-search\">\r\n\t\t\t\t\t\t\t<form action=\"/eservice/menu/search.do\"
-        class=\"menu-search-form\">\r\n\t\t\t\t\t\t\t\t<p>\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<input
-        type=\"text\" size=\"15\" name=\"search\" id=\"search\" class=\"field\"  value=\"Menu
-        Search\" />\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<input type=\"submit\"
-        id=\"menu-search-submit\" value=\"Go\" class=\"buttonCalendar\" />\r\n\t\t\t\t\t\t\t\t<img
-        src=\"/eservice/icons/loading.gif\" alt=\"loading\" class=\"loading\" id=\"menu-search-loading\"
-        />\r\n\t\t\t\t\t\t\t\t</p>\r\n\t\t\t\t\t\t\t\t<!-- div id=\"search-autocomplete\"
-        class=\"autocompleter\"></div -->\r\n\t\t\t\t\t\t\t</form>\r\n\t\t\t\t\t\t\t<div
-        id=\"search-results\" >\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\r\n\t\t\t<div
-        id=\"scrollingMenuContainer\" class=\"scrolling-container\">\r\n\t\t\t\t<ul
-        id=\"navigation\">\r\n\t\t\t\t\t\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\t\r\n\t\t\r\n\t\t\r\n\t\t\t<li
-        class=\"nav-return\" title=\"Back one menu level\"><a href=\"/eservice/navigationStart.do\"
-        id=\"node-0\"><img src=\"/eservice/icons/parent.gif\" alt=\"Return to \" />Development
-        Applications                          </a></li>\r\n\t\t\r\n\t\r\n\r\n\t\r\n\r\n\t\r\n\t\t\r\n\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\r\n
-        \       \r\n    \t    <li class='java'>\r\n    \t\r\n\t       <a href=\"/eservice/denquiryInit.do?doc_type=11&nodeNum=101\"
-        class=\"linkitem\" id=\"node-101\">Construction Certificates</a>\r\n        </li>\r\n
-        \ \r\n\t\t\r\n\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\r\n        \r\n    \t    <li
-        class='java'>\r\n    \t\r\n\t       <a href=\"/eservice/denquiryInit.do?doc_type=12&nodeNum=102\"
-        class=\"linkitem\" id=\"node-102\">Complying Development Certificates</a>\r\n
-        \       </li>\r\n  \r\n\t\t\r\n\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\r\n        \r\n
-        \   \t    <li class='java'>\r\n    \t\r\n\t       <a href=\"/eservice/determinedDAs.do?num_days=60&nodeNum=156\"
-        class=\"linkitem\" id=\"node-156\">Recently Determined Development Applications</a>\r\n
-        \       </li>\r\n  \r\n\t\t\r\n\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\r\n        \r\n
-        \   \t    <li class='java'>\r\n    \t\r\n\t       <a href=\"/eservice/daEnquiryInit.do?nodeNum=24&nodeNum=147757\"
-        class=\"linkitem\" id=\"node-147757\">Development Application Enquiry</a>\r\n
-        \       </li>\r\n  \r\n\r\n\r\n\r\n\t\t\t\t</ul>\r\n\t\t\t</div>\r\n\t\t\t\r\n\t\t\t
-        \r\n\t\t\t</div>\r\n\t\t</li>\r\n\t\r\n\r\n\r\n\t\r\n\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\r\n\r\n\t\t\t\r\n\r\n\t\t\t\r\n\t\t\t\t\r\n\t\t\t\r\n\r\n\t\t\t\r\n\r\n\t\r\n\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\r\n\r\n\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\t\r\n\r\n\t\r\n\t\r\n\t\t\t<li
-        id=\"siteaccesspanel_3\">\r\n\t\t\t\t<div class=\"menu-group\">\r\n\t\t\t\t\t<div
-        class=\"menu-header-panel\" title=\"Drag to change panel order\">\r\n\t\t\t\t\t\t<h3
-        class=\"panel-handle\">History</h3>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<p class=\"menu-handlers\">\r\n\t\t\t\t\t\r\n\t\t\t\t\t<a
-        href=\"/eservice/menu/movePanel.do?id=2\" title=\"Panel Up\" class=\"panel-up\">\r\n\t\t\t\t\t\t\t\t\t\t<img
-        src=\"/eservice/icons/panel_move_up.gif\" alt=\"Up\" /></a>\r\n\t\t\t\t\t\r\n\t\t\t\t\t<a
-        href=\"/eservice/menu/minimisePanel.do?id=2\" title=\"Minimise Panel\" class=\"panel-min-max\"
-        id=\"panel-min-max-2\" >\r\n<img src=\"/eservice/icons/minimise.gif\" alt=\"Minimise\"
-        />\r\n</a>\r\n\r\n\t\t\t\t\t</p>\r\n\r\n\t\t\t\t\t\r\n\t\t\t\t\t<ul id=\"recently-used\">\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<li
-        id=\"recently-used-0\">\r\n                                <a href=\"/eservice/daEnquiryInit.do?nodeNum=24\"
-        class=\"linkitem\">Development Applications</a>\r\n                                \r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t\t\r\n\t\t\t\t</div>\r\n\t\t\t</li>\r\n\t\r\n\r\n\r\n\t\t\t\r\n\r\n\t\t\t\r\n\t\t\t\t\r\n\t\t\t\r\n\r\n\t\t\t\r\n\r\n\t\r\n</ul>\r\n<script
+        href=\"#\">Hide Menus</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div
+        id=\"site-access\" class=\"menu-on\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<ul
+        id=\"siteaccesspanel\">\r\n\r\n\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\r\n\r\n\r\n<h2>\r\n\tNavigation
+        Problem\r\n</h2>\r\n\r\n<p>There has been a problem with Site Navigation.</p>\r\n<!--
+        javax.servlet.ServletException: au.com.civica.eservices.util.jdbc.TransactionRollbackException:
+        Refer to cause -->\r\n\r\n\r\n\t\r\n\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\r\n\r\n\t\t\t\r\n\r\n\t\t\t\r\n\t\t\t\t\r\n\t\t\t\r\n\r\n\t\t\t\r\n\r\n\t\r\n</ul>\r\n<script
         type=\"text/javascript\">\r\n\t//Drag n Drop panels\r\n\tSortable.create('siteaccesspanel',
         {handle: 'panel-handle', onUpdate:function(){new Ajax.Request(webContextPath
         + '/resequencePanels.do', {method: 'post', parameters:Sortable.serialize('siteaccesspanel')})}});\r\n</script>\r\n\r\n<p
         id=\"scroll-trigger\">15</p>\r\n<p id=\"alternate-scroll-trigger\"></p>\r\n<p
-        id=\"pixel-height-base-rate-for-list-item\">24</p>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div
+        id=\"pixel-height-base-rate-for-list-item\">24</p>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div
         class=\"col-sm-9\" id=\"bstrap-main\">\r\n\t\t\t\t\t\t<div id=\"main-content\">\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<div
         class=\"transaction-area\" id=\"transaction-area\"></div>\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<!--
         END MENU CONTENT -->\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<div class=\"unique-content\"
-        id=\"daEnquiry_daEnquiry\">\r\n<div class=\"daEnquirySpecific\" id=\"daEnquiry_daEnquiryDocumentTypeDefaultTypes\">\r\n\r\n\t\t\t\t\t\t\t\t\r\n\r\n\r\n\r\n\r\n\r\n\r\n\t\r\n\t\r\n\t\t\r\n\t\t<h1
-        class=\"functionHeader\">\r\n\t\t\t\r\n          \r\n          \r\n              Development
-        Application Enquiry\r\n          \r\n\t  \r\n\t\t\t\r\n\t\t</h1>\r\n\t\r\n\t\r\n\r\n\t\r\n\t\r\n<div
-        id=\"leftcontent\">\r\n\r\n\t\t\t\r\n\r\n\r\n\r\n\r\n\r\n<div class=\"infopanel\">
-        \   \r\n\t<!-- CIVICA-INFO-START -->   \r\n\t\r\n        <div id=\"infopanel-header\">\r\n\t
-        \       <h4 class=\"entryHeader\" >\r\n\t            \r\n\t\tInstructions\r\n\t\t\r\n\t
-        \       </h4>\r\n        </div>\r\n\t\r\n    <div id=\"instructions-content\"
-        class=\"instructions\">\r\n\r\n        \r\n\r\n\r\n\r\n\r\n\r\nTo make an
-        enquiry enter some information that identifies the applications or properties
-        of interest.\r\n\r\n    </div>\r\n\r\n\t<!-- CIVICA-INFO-END -->\r\n</div>\r\n\r\n</div>\r\n<div
-        id=\"rightcontent\">\r\n\t\t\r\n\t\t\t\r\n\t\t\r\n\r\n\r\n\r\n\r\n<div class=\"bodypanel\"
-        id=\"bodypanel1\">   \t\t\r\n\t<!-- CIVICA-CONTENT-START:bodypanel1 -->\r\n\t\r\n
-        \  <h4 class=\"non_table_headers\" >\r\n\t\t\r\n\t\t\r\n\t      \t\tApplication
-        Details\r\n\t        \r\n    </h4>\r\n\r\n\t\t<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div>\r\n
-        \ <form action=\"daEnquiry.do\" id=\"daEnquiryForm\" name=\"daEnquiryForm\"
-        class=\"form-horizontal\">\r\n    <fieldset>\r\n      <div class=\"form-group\">\r\n
-        \       <label class=\"col-sm-3 control-label\">DA Number</label>\r\n        <div
-        class=\"col-sm-9\">\r\n          <input type=\"text\" class=\"text-medium\"
-        name=\"number\" id=\"DANumber\" size=\"10\" maxlength=\"10\" errors=\"DANumber\"
-        value=\"\" />\r\n          <span class=\"subText\">eg 121/2005</span>\r\n
-        \       </div>\r\n      </div>\r\n      <p />\r\n      <p class=\"rowDataOnly\">\r\n
-        \       <span class=\"rowInfo\">\r\n          <strong>OR</strong>\r\n          use
-        any of the following search fields:\r\n        </span>\r\n      </p>\r\n      <p>\r\n
-        \       \r\n        &nbsp;\r\n        \r\n      </p>\r\n      <fieldset>\r\n
-        \       <h2>Lodgement Date</h2>\r\n        <div class=\"radio-inline-group\">\r\n
-        \         <label class=\"radio-inline\">\r\n            <input type=\"radio\"
-        name=\"lodgeRangeType\" id=\"lodgeRangeType\" onclick=\"javascript:setDateRange('',
-        '', 'DADateFrom', 'DADateTo')\" />\r\n            <span class=\"radioText\">Specified
-        Range</span>\r\n          </label>\r\n          <label class=\"radio-inline\">\r\n
-        \           <input type=\"radio\" name=\"lodgeRangeType\" id=\"lodgeRangeType\"
-        onclick=\"javascript:setDateRange('07/07/2019','08/07/2019', 'DADateFrom',
-        'DADateTo')\" />\r\n            <span class=\"radioText\">This Week</span>\r\n
-        \         </label>\r\n          <label class=\"radio-inline\">\r\n            <input
-        type=\"radio\" name=\"lodgeRangeType\" id=\"lodgeRangeType\" onclick=\"javascript:setDateRange('30/06/2019','06/07/2019',
-        'DADateFrom', 'DADateTo')\" />\r\n            <span class=\"radioText\">Last
-        Week</span>\r\n          </label>\r\n          <label class=\"radio-inline\">\r\n
-        \           <input type=\"radio\" name=\"lodgeRangeType\" id=\"lodgeRangeType\"
-        onclick=\"javascript:setDateRange('01/07/2019','31/07/2019', 'DADateFrom',
-        'DADateTo')\" />\r\n            <span class=\"radioText\">This Month</span>\r\n
-        \         </label>\r\n          <label class=\"radio-inline\">\r\n            <input
-        type=\"radio\" name=\"lodgeRangeType\" id=\"lodgeRangeType\" onclick=\"javascript:setDateRange('01/06/2019','30/06/2019',
-        'DADateFrom', 'DADateTo')\" />\r\n            <span class=\"radioText\">Last
-        Month</span>\r\n          </label>\r\n        </div>\r\n        <div class=\"form-group\">\r\n
-        \         <span id=\"daFromDateRow\">\r\n            <label class=\"col-md-2
-        col-xs-3 control-label\" for=\"DADateFrom\" id=\"daFromDateLabel\">From</label>\r\n
-        \           <div class=\"inputField col-md-4 col-xs-9\" id=\"daFromDateInput\">\r\n
-        \             <input type=\"text\" class=\"datepick text-small\" name=\"dateFrom\"
-        id=\"DADateFrom\" size=\"10\" maxlength=\"10\" errors=\"DADateFrom\" value=\"\"
-        />\r\n            </div>\r\n          </span>\r\n          <span id=\"daToDateRow\">\r\n
-        \           <label class=\"col-md-2 col-xs-3 control-label\" for=\"DADateTo\"
-        id=\"daToDateLabel\">To</label>\r\n            <div class=\"inputField col-md-4
-        col-xs-9\" id=\"daToDateInput\">\r\n              <input type=\"text\" class=\"datepick
-        text-small\" name=\"dateTo\" id=\"DADateTo\" size=\"10\" maxlength=\"10\"
-        errors=\"DADateTo\" value=\"\" />\r\n            </div>\r\n          </span>\r\n
-        \       </div>\r\n      </fieldset>\r\n      <fieldset>\r\n        <h2>Determination
-        Date</h2>\r\n        <div class=\"radio-inline-group\">\r\n          <label
-        class=\"radio-inline\">\r\n            <input type=\"radio\" name=\"detRangeType\"
-        id=\"detRangeType\" onclick=\"javascript:setDateRange('','', 'detDateFromString',
-        'detDateToString')\" />\r\n            <span class=\"radioText\">Specified
-        Range</span>\r\n          </label>\r\n          <label class=\"radio-inline\">\r\n
-        \           <input type=\"radio\" name=\"detRangeType\" id=\"detRangeType\"
-        onclick=\"javascript:setDateRange('07/07/2019','08/07/2019', 'detDateFromString',
-        'detDateToString')\" />\r\n            <span class=\"radioText\">This Week</span>\r\n
-        \         </label>\r\n          <label class=\"radio-inline\">\r\n            <input
-        type=\"radio\" name=\"detRangeType\" id=\"detRangeType\" onclick=\"javascript:setDateRange('30/06/2019','06/07/2019',
-        'detDateFromString', 'detDateToString')\" />\r\n            <span class=\"radioText\">Last
-        Week</span>\r\n          </label>\r\n          <label class=\"radio-inline\">\r\n
-        \           <input type=\"radio\" name=\"detRangeType\" id=\"detRangeType\"
-        onclick=\"javascript:setDateRange('01/07/2019','31/07/2019', 'detDateFromString',
-        'detDateToString')\" />\r\n            <span class=\"radioText\">This Month</span>\r\n
-        \         </label>\r\n          <label class=\"radio-inline\">\r\n            <input
-        type=\"radio\" name=\"detRangeType\" id=\"detRangeType\" onclick=\"javascript:setDateRange('01/06/2019','30/06/2019',
-        'detDateFromString', 'detDateToString')\" />\r\n            <span class=\"radioText\">Last
-        Month</span>\r\n          </label>\r\n        </div>\r\n        <div class=\"form-group\">\r\n
-        \         <span id=\"daFromDateRow\">\r\n            <label class=\"col-md-2
-        col-xs-3 control-label\" for=\"detDateFromString\" id=\"daFromDateLabel\">From</label>\r\n
-        \           <div class=\"inputField col-md-4 col-xs-9\" id=\"detFromDateInput\">\r\n
-        \             <input type=\"text\" class=\"datepick text-small\" name=\"detDateFromString\"
-        id=\"detDateFromString\" size=\"10\" maxlength=\"10\" errors=\"DADateFrom\"
-        value=\"\" />\r\n            </div>\r\n          </span>\r\n          <span
-        id=\"daToDateRow\">\r\n            <label class=\"col-md-2 col-xs-3 control-label\"
-        for=\"detDateToString\" id=\"deToDateLabel\">To</label>\r\n            <div
-        class=\"inputField col-md-4 col-xs-9\" id=\"etToDateInput\">\r\n              <input
-        type=\"text\" class=\"datepick text-small\" name=\"detDateToString\" id=\"detDateToString\"
-        size=\"10\" maxlength=\"10\" errors=\"DADateTo\" value=\"\" />\r\n            </div>\r\n
-        \         </span>\r\n        </div>\r\n      </fieldset>\r\n      <fieldset>\r\n
-        \       <h2>Property Details</h2>\r\n        <div class=\"form-group\" id=\"streetNameRow\">\r\n
-        \         <label class=\"control-label col-sm-3\" for=\"streetName\">Street
-        Name</label>\r\n          <div class=\"col-sm-9\">\r\n            <input type=\"text\"
-        class=\"text-large\" name=\"streetName\" id=\"streetName\" size=\"20\" onblur=\"javascript:getHouseNum();
-        javascript:getSuburb()\" value=\"\" />\r\n            <div id=\"streetHints\"
-        class=\"autocompleter\">\r\n              \r\n              &nbsp;\r\n              \r\n
-        \           </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"form-group\"
-        id=\"suburbDropdownRow\">\r\n          <label class=\"control-label col-sm-3\"
-        for=\"suburb\">Suburb</label>\r\n          <div class=\"col-sm-9\">\r\n            <div
-        id=\"suburbSelect\">\r\n              <select class=\"select-medium\" name=\"suburb\"
-        id=\"suburb\">\r\n                <option value=\"0\" selected=\"selected\">-
-        -None Selected- -</option>\r\n                <option value=\"6\">AMMERDOWN</option>\r\n
-        \               <option value=\"7\">BLETCHINGTON</option>\r\n                <option
-        value=\"8\">BLOOMFIELD</option>\r\n                <option value=\"9\">BOWEN</option>\r\n
-        \               <option value=\"10\">CALARE</option>\r\n                <option
-        value=\"11\">CANOBOLAS</option>\r\n                <option value=\"12\">CLIFTON
-        GROVE</option>\r\n                <option value=\"26\">EMU SWAMP</option>\r\n
-        \               <option value=\"13\">GLENROI</option>\r\n                <option
-        value=\"14\">GUYONG</option>\r\n                <option value=\"15\">HUNTLEY</option>\r\n
-        \               <option value=\"2\">LUCKNOW</option>\r\n                <option
-        value=\"3\">MARCH</option>\r\n                <option value=\"5\">MILLTHORPE</option>\r\n
-        \               <option value=\"16\">NARRAMBLA</option>\r\n                <option
-        value=\"66\">NOT USED</option>\r\n                <option value=\"1\">ORANGE</option>\r\n
-        \               <option value=\"17\">SHADFORTH</option>\r\n                <option
-        value=\"18\">SPRING CREEK</option>\r\n                <option value=\"4\">SPRING
-        HILL</option>\r\n                <option value=\"20\">SPRING TERRACE</option>\r\n
-        \               <option value=\"21\">SPRING TERRACE</option>\r\n                <option
-        value=\"22\">SPRINGSIDE</option>\r\n                <option value=\"23\">SUMA
-        PARK - NOT USED</option>\r\n                <option value=\"24\">SUMMER HILL</option>\r\n
-        \               <option value=\"25\">WARRENDINE</option>\r\n              </select>\r\n
-        \           </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"form-group\"
-        id=\"unitNumberRow\">\r\n          <label class=\"control-label col-sm-3\"
-        for=\"unitNum\">Unit</label>\r\n          <div class=\"col-sm-9\">\r\n            <input
-        type=\"text\" class=\"text-mini\" name=\"unitNum\" id=\"unitNum\" size=\"10\"
-        value=\"\" />\r\n          </div>\r\n        </div>\r\n        <div class=\"form-group\"
-        id=\"houseNumRow\">\r\n          <label class=\"control-label col-sm-3\" for=\"houseNum\">House
-        No.</label>\r\n          <div class=\"col-sm-9\">\r\n            <div id=\"houseNumSelect\">\r\n
-        \             <select class=\"select-medium\" name=\"houseNum\" id=\"houseNum\">\r\n
-        \               <option value=\"0&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;\">- -None
-        Selected- -</option>\r\n              </select>\r\n            </div>\r\n
-        \         </div>\r\n        </div>\r\n        <div class=\"form-group\" id=\"planNumberRow\">\r\n
-        \         <label class=\"control-label col-sm-3\" for=\"planNumber\">Plan</label>\r\n
-        \         <div class=\"col-sm-9\">\r\n            <input type=\"text\" class=\"text-small\"
-        name=\"planNumber\" id=\"planNumber\" size=\"10\" value=\"\" />\r\n          </div>\r\n
-        \       </div>\r\n        <div class=\"form-group\" id=\"strataPlanRow\">\r\n
-        \         <label class=\"control-label col-sm-3\" for=\"strataPlan\">Strata
-        Plan</label>\r\n          <div class=\"col-sm-9\">\r\n            <input type=\"text\"
-        class=\"text-small\" name=\"strataPlan\" id=\"strataPlan\" size=\"10\" value=\"\"
-        />\r\n          </div>\r\n        </div>\r\n        <div class=\"form-group\"
-        id=\"lotRow\">\r\n          <label class=\"control-label col-sm-3\" for=\"lotNumber\">Lot</label>\r\n
-        \         <div class=\"col-sm-9\">\r\n            <input type=\"text\" class=\"text-small\"
-        name=\"lotNumber\" id=\"lotNumber\" size=\"10\" value=\"\" />\r\n          </div>\r\n
-        \       </div>\r\n        <div class=\"form-group\" id=\"propertyNameRow\">\r\n
-        \         <label class=\"control-label col-sm-3\" for=\"propertyName\">Place</label>\r\n
-        \         <div class=\"col-sm-9\">\r\n            <input type=\"text\" class=\"text-large\"
-        name=\"propertyName\" id=\"propertyName\" size=\"20\" value=\"\" />\r\n          </div>\r\n
-        \       </div>\r\n      </fieldset>\r\n      <p class=\"rowDataOnly\">\r\n
-        \       <span class=\"rowInfo\">\r\n          <strong>AND</strong>\r\n          the
-        following search field:\r\n        </span>\r\n      </p>\r\n      <p>\r\n
-        \       \r\n        &nbsp;\r\n        \r\n      </p>\r\n      <fieldset>\r\n
-        \       <h2>Options</h2>\r\n        <div class=\"radio\">\r\n          <label>\r\n
-        \           <input type=\"radio\" name=\"searchMode\" value=\"A\" id=\"searchModeA\"
-        checked=\"checked\" />\r\n            All DAs\r\n          </label>\r\n        </div>\r\n
-        \       <div class=\"radio\">\r\n          <label>\r\n            <input type=\"radio\"
-        name=\"searchMode\" value=\"D\" id=\"searchModeD\" />\r\n            Determined
-        DAs\r\n          </label>\r\n        </div>\r\n        <div class=\"radio\">\r\n
-        \         <label>\r\n            <input type=\"radio\" name=\"searchMode\"
-        value=\"P\" id=\"searchModeP\" />\r\n            DAs Awaiting Decision\r\n
-        \         </label>\r\n        </div>\r\n        <div class=\"radio\">\r\n
-        \         <label>\r\n            <input type=\"radio\" name=\"searchMode\"
-        value=\"C\" id=\"searchModeC\" />\r\n            Currently Advertised DAs\r\n
-        \         </label>\r\n        </div>\r\n      </fieldset>\r\n    </fieldset>\r\n
-        \   <div class=\"button-panel\">\r\n      <input type=\"submit\" name=\"submitButton\"
-        class=\"button\" value=\"Search\" onclick=\"javascript:checkDetDatesMakeSense()\"
-        />\r\n      <input type=\"button\" name=\"clearButton\" class=\"button\" value=\"Clear\"
-        onclick=\"javascript:clearDaEnquiryFields()\" />\r\n    </div>\r\n  </form>\r\n</div>\r\n\r\n\r\n\t<!--
-        CIVICA-CONTENT-END:bodypanel1 -->\r\n</div>\r\n\r\n\r\n\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n</div>\r\n\r\n\r\n\t\t\t\t\t\t\t</div>\r\n</div>\r\n
+        id=\"error_serverError\">\r\n<div class=\"daEnquirySpecific\" id=\"error_serverErrorDocumentTypeDefaultTypes\">\r\n\r\n\t\t\t\t\t\t\t\t\n\n\n\n\n\n\t\n\t\n\t\t\n\t\t<h1>\n\t\t\tProblem
+        Encountered\n\t\t\t\n\t\t</h1>\n\t\n\n\t<div id=\"fullcontent\" class=\"no_form\">\n\t\n\t\n\t\t\n\t\t\n\t\t\t\n\t\t\n<div
+        \ class=\"bodypanel\" id=\"bodypanel1\">\n\t<!-- CIVICA-CONTENT-START:bodypanel1
+        -->\n\t\t\r\n\r\n\r\n<!--\r\n\tDO NOT REMOVE see below.\r\n\r\n\tInternet
+        Explorer has a feature \"Show friendly HTTP error message\" that causes\r\n\tapplication
+        specific error page not to be show if the content is less than 512 bytes.\r\n\r\n\tThis
+        comment is here to inform the developer of the problem and to increase the
+        content\r\n\tabove 512 bytes. Do not remove this comment.\r\n\r\n    Review
+        log for details of exception around 2025-01-28 05:57:27:358\r\n-->\r\n\r\n\r\n\r\n<h2>Problem
+        Details</h2>\r\n\r\n<p class=\"datapanel\">\r\n\t\r\n\tA problem has occurred
+        while processing your request. Please try this again at a later time.\r\n\t\r\n</p>\r\n\r\n<form
+        action=\"/eservice/\">\r\n\t<div class=\"button-panel\">\r\n\t\t<input type=\"submit\"
+        class=\"btn btn-primary\" value=\"Return To Home Page\"/>\r\n\t\t<input type=\"button\"
+        id=\"closePopup\" class=\"btn btn-close\" value=\"Close Window\" style=\"display:none\"
+        onclick=\"window.close();\"/>\r\n\t\t<p class=\"lightbox-close\" style=\"display:none\">\r\n\t\t\t<a
+        href=\"#\" class=\"lbAction\" rel=\"deactivate\" id=\"lightbox-closer\">\r\n\t\t\t\t<img
+        src=\"/eservice/icons/close.png\" alt=\"Close\" />\r\n\t\t\t</a>\r\n\t\t</p>\r\n\t</div>\t\r\n</form>\r\n\r\n<script
+        type=\"text/javascript\">\r\n\tif (window.opener) {\r\n\t \tclosePopup = document.getElementById(\"closePopup\");\r\n\t
+        \tif (closePopup) {\r\n\t \t\tclosePopup.style.display = 'inline';\r\n\t \t}\r\n\t
+        } \r\n</script>\r\n\n\t<!-- CIVICA-CONTENT-END:bodypanel1 -->\n</div>\n\n\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n</div>\r\n
         \    \r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t</div>\r\n\t\t\t</div>
         <!-- container -->\r\n\t\t</div> <!-- content -->\r\n\r\n\t\t<div id=\"bottom\"
         class=\"tabbed\">\r\n\t\t\t<div class=\"container\" id=\"bottom-container\">\r\n\t\t\t\t<div
         class=\"row\">\r\n\t\t\t\t\t\r\n\t\t\t\t\t<div class=\"footer\">\r\n\t\t\t\t\t\t<p>&#169;
-        Civica Pty. Ltd. 2016\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t</p>\r\n\t\t\t\t\t\t<p
+        Civica Pty. Ltd. 2017\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t</p>\r\n\t\t\t\t\t\t<p
         id=\"web-context-path\">/eservice</p>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<!--
         End page div -->\r\n\r\n\r\n\t\r\n\r\n<!-- End Bootstrap eServices -->\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<!--
         iServices -->\r\n\r\n\t</body>\r\n</html>\r\n"
-    http_version: 
-  recorded_at: Tue, 14 May 2019 14:00:00 GMT
-- request:
-    method: get
-    uri: https://ecouncil.orange.nsw.gov.au/eservice/daEnquiry.do?dateFrom=15/04/2019&dateTo=15/05/2019&detDateFromString=&detDateToString=&houseNum=0%0A%09%09%09%09%09&lotNumber=&number=&planNumber=&propertyName=&searchMode=A&strataPlan=&streetName=&suburb=0&unitNum=
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip,deflate,identity
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Mechanize/2.7.6 Ruby/2.5.1p57 (http://github.com/sparklemotion/mechanize/)
-      Accept-Charset:
-      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
-      Accept-Language:
-      - en-us,en;q=0.5
-      Cookie:
-      - JSESSIONID_live=0000QuRT8vRHPF6I7vb_36IJTX9:-1
-      Host:
-      - ecouncil.orange.nsw.gov.au
-      Referer:
-      - https://ecouncil.orange.nsw.gov.au/eservice/daEnquiryInit.do?nodeNum=24
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - '300'
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Sun, 07 Jul 2019 19:57:29 GMT
-      Server:
-      - Apache/2.2.15 (CentOS)
-      Strict-Transport-Security:
-      - max-age=15768000
-      Pragma:
-      - No-cache
-      Cache-Control:
-      - no-cache,no-store,max-age=0,must-revalidate,proxy-revalidate
-      Expires:
-      - '0'
-      Connection:
-      - close
-      Transfer-Encoding:
-      - chunked
-      Content-Type:
-      - text/html; charset=UTF-8
-      Content-Language:
-      - en-AU
-    body:
-      encoding: UTF-8
-      string: "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n      \r\n\t\r\n    \r\n\r\n\r\n\r\n\t\t\r\n\r\n\r\n
-        \     \r\n\t\r\n    \r\n    \r\n  \r\n\r\n\r\n  \r\n\r\n\r\n<!DOCTYPE HTML
-        PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"  \"http://www.w3.org/TR/html4/loose.dtd\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<html
-        lang=\"en-US\">\r\n\t<head>\r\n\t\t<meta http-equiv=\"Content-Type\" content=\"text/html;
-        charset=UTF-8\" />\r\n\t\t<meta name=\"viewport\" content=\"width=device-width,
-        initial-scale=1, maximum-scale=1\" />\r\n\t\t<title>\r\n\t\t\tOrange *live*
-        10 Nov\r\n\t\t</title>\r\n\t\t<link rel=\"stylesheet\" href=\"/eservice/library/bootstrap-335.min.css\"
-        type=\"text/css\" media=\"screen, projection, print\" >\r\n<link rel=\"stylesheet\"
-        href=\"/eservice/library/jquery-ui.min.css\" type=\"text/css\" media=\"screen,
-        projection, print\" >\r\n<link rel=\"stylesheet\" href=\"/eservice/library/jquery-ui.structure.min.css\"
-        type=\"text/css\" media=\"screen, projection, print\" >\r\n<link rel=\"stylesheet\"
-        href=\"/eservice/library/jquery-ui.theme.min.css\" type=\"text/css\" media=\"screen,
-        projection, print\" >\r\n<link rel=\"stylesheet\" href=\"/eservice/library/e-services.css\"
-        type=\"text/css\" media=\"screen, projection, print\" >\r\n<link rel=\"stylesheet\"
-        href=\"/eservice/library/calendar.css\" type=\"text/css\" media=\"screen,
-        projection, print\" >\r\n<link rel=\"stylesheet\" href=\"/eservice/library/daEnquiry_daEnquiryResults.css\"
-        type=\"text/css\" media=\"screen, projection\" >\r\n<!--[if IE 6]>\r\n<link
-        rel=\"stylesheet\" href=\"/eservice/library/ie6.css\" type=\"text/css\" media=\"screen,
-        projection\" >\r\n<![endif]-->\r\n<!--[if IE 8]>\r\n<link rel=\"stylesheet\"
-        href=\"/eservice/library/ie8.css\" type=\"text/css\" media=\"screen, projection\"
-        >\r\n<![endif]-->\r\n<link rel=\"stylesheet\" href=\"/eservice/library/e-print.css\"
-        type=\"text/css\" media=\"print\" >\r\n<link rel=\"stylesheet\" href=\"/eservice/library/header-eserv.css\"
-        type=\"text/css\" media=\"screen, projection, print\" >\r\n<link rel=\"stylesheet\"
-        href=\"/council/eservice/occ-eservice.css\" type=\"text/css\" media=\"screen,
-        projection, print\" >\r\n\r\n\t\t<script>var AUTHJS = {};AUTHJS.productName
-        = \"i-Services\";</script>\r\n<script type=\"text/javascript\" src=\"/eservice/jscalendar-1.0/calendar.js\"></script>\r\n<script
-        type=\"text/javascript\" src=\"/eservice/javascript/jquery/jquery-1.11.3.min.js\"></script>\r\n<script>AUTHJS.productName
-        = \"e-Services\";</script>\r\n<script type=\"text/javascript\" src=\"/eservice/javascript/tether-1.3.3.js\"></script>\r\n<script
-        type=\"text/javascript\" src=\"/eservice/javascript/modernizr-283.min.js\"></script>\r\n<script
-        type=\"text/javascript\" src=\"/eservice/javascript/jquery/bootstrap-335.min.js\"></script>\r\n<script
-        type=\"text/javascript\" src=\"/eservice/javascript/jquery/jquery-ui-datepicker.min.js\"></script>\r\n<script
-        type=\"text/javascript\" src=\"/eservice/javascript/e-services-page.js\"></script>\r\n<script
-        type=\"text/javascript\" src=\"/eservice/javascript/prototype.js\"></script>\r\n<script
-        type=\"text/javascript\" src=\"/eservice/javascript/civica.jquery.plugins.js\"></script>\r\n<script
-        type=\"text/javascript\" src=\"/eservice/javascript/civica.common.init.js\"></script>\r\n<script
-        type=\"text/javascript\" src=\"/eservice/javascript/civica.jquery.functions.js\"></script>\r\n<script
-        type=\"text/javascript\" src=\"/eservice/javascript/util.js\"></script>\r\n<script
-        type=\"text/javascript\" src=\"/eservice/javascript/json2.js\"></script>\r\n<script
-        type=\"text/javascript\" src=\"/eservice/javascript/effects.js\"></script>\r\n<script
-        type=\"text/javascript\" src=\"/eservice/javascript/controls.js\"></script>\r\n<script
-        type=\"text/javascript\" src=\"/eservice/javascript/dragdrop.js\"></script>\r\n<script
-        type=\"text/javascript\" src=\"/eservice/javascript/lightbox.js\"></script>\r\n<script
-        type=\"text/javascript\" src=\"/eservice/javascript/menu.js\"></script>\r\n<script
-        type=\"text/javascript\" src=\"/eservice/javascript/menuScroll.js\"></script>\r\n<script
-        type=\"text/javascript\" src=\"/eservice/javascript/sitemap.js\"></script>\r\n<script
-        type=\"text/javascript\" src=\"/eservice/javascript/jquery.imageTickBox.js\"></script>\r\n<script
-        type=\"text/javascript\" src=\"/eservice/javascript/jquery.metadata.js\"></script>\r\n\r\n\t\t<link
-        rel=\"shortcut icon\" href=\"favicon.ico\" />\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t</head>\r\n\t\r\n\t<body\r\n\t\t\r\n\t>\r\n\t\t\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<script
-        type=\"text/javascript\">\r\n\tvar initialTabPage= \"null\";\r\n\tjQuery(document).ready(function()
-        {\r\n\t\tif (initialTabPage != \"null\") {\r\n\t\t\tif (initialTabPage==\"sitemap\"){\r\n\t\t\t\tinitialTabPage=\"#sitemap-controller\";
-        \   \r\n\t\t\t} else {\r\n\t\t\t\tinitialTabPage=\"#dashboard-controller\";
-        \      \r\n\t\t\t}\r\n\t\t\tjQuery(initialTabPage + \" a.tab-clicker\").not(\".tabs-content
-        *\").click();\r\n\t\t}\r\n\t\t\r\n\t});\r\n\r\n\t(function() {\r\n\t\tvar
-        isBootstrapEvent = false;\r\n\t\tif (window.jQuery) {\r\n\t\t\tvar all = jQuery('*');\r\n\t\t\tjQuery.each(['hide.bs.dropdown',
-        \r\n\t\t\t\t'hide.bs.collapse', \r\n\t\t\t\t'hide.bs.modal', \r\n\t\t\t\t'hide.bs.tooltip',\r\n\t\t\t\t'hide.bs.popover',\r\n\t\t\t\t'hide.bs.tab'],
-        function(index, eventName) {\r\n\t\t\t\tall.on(eventName, function( event
-        ) {\r\n\t\t\t\t\tisBootstrapEvent = true;\r\n\t\t\t\t});\r\n\t\t\t});\r\n\t\t}\r\n\t\tvar
-        originalHide = Element.hide;\r\n\t\tElement.addMethods({\r\n\t\t\thide: function(element)
-        {\r\n\t\t\t\tif(isBootstrapEvent) {\r\n\t\t\t\t\tisBootstrapEvent = false;\r\n\t\t\t\t\treturn
-        element;\r\n\t\t\t\t}\r\n\t\t\t\treturn originalHide(element);\r\n\t\t\t}\r\n\t\t});\r\n\t})();\r\n</script>\r\n\r\n\r\n\r\n<!--
-        eServices -->\r\n\r\n\t<div id=\"page\" class=\" tabbed not-logged-in\">\r\n\r\n\t\r\n\r\n\r\n\t\t<div
-        id=\"masthead\" class=\"navbar navbar-static-top bs-docs-nav\">\r\n\t\t\t<div
-        class=\"container\" id=\"masthead-container\">\r\n\t\t\t\t<div class=\"navbar-header\">\r\n\t\t\t\t\t<a
-        class=\"navbar-brand\">\r\n\t\t\t\t\t\t<span></span>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\tOrange
-        City Council\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t</a>\r\n\t\t\t\t\t\r\n\t\t\t\t</div>\r\n\t\t\t\t<!--
-        masthead Quicklinks start -->\r\n\t\t\t\t<div id=\"wrapper-quick-links\">\r\n\t\t\t\t\t<ul
-        id=\"quick-links\" class=\"nav navbar-nav navbar-right\">\r\n\t\t\t\t\t\t<li
-        class=\"top-link-home\">\r\n\t\t\t\t\t\t\t<a href=\"/eservice/navigationStart.do\"
-        id=\"quick-link-home\">\r\n\t\t\t\t\t\t\t\tHome\r\n\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<li
-        class=\"top-link-signin\">\r\n\t\t\t\t\t\t\t\t\t<a href=\"/eservice/logonInit.do\"
-        id=\"quick-link-signin\">\r\n\t\t\t\t\t\t\t\t\t\tSign In\r\n\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t<li
-        class=\"top-link-user\">\r\n\t\t\t\t\t\t\t<a>\r\n\t\t\t\t\t\t\t\t<!-- masthead
-        User start -->\r\n\t\t\t\t                \r\n\t\t\t\t                    \r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\tYou
-        are a Guest\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<!--
-        masthead User end -->\r\n\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t</li>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t</div>\r\n\t\t\t\t<!--
-        masthead Quicklinks end -->\r\n\t\t\t</div>\r\n\t\t\t<!-- End container -->\r\n\t\t</div>\r\n\t\t<!--
-        End Masthead -->\r\n\r\n\r\n\t\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\t\t<div
-        id=\"bcpanel\">\r\n\t\t\t<div class=\"container\" id=\"bcpanel-container\">\r\n\t\t\t\t\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\t\r\n\t\r\n\t\t\r\n\t\t<ul
-        id=\"breadcrumbs\">\r\n\r\n            \r\n\r\n            \r\n\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\t<li
-        class=\"last-node\">\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t
-        \   \r\n\t\t\t\t\t\t    \r\n\t\t\t            \t    <a href=\"/eservice/daEnquiryInit.do?nodeNum=24\"
-        onclick=\"openSearchResultParent(24);return false;\">Development Applications</a>\r\n\t\t\t
-        \           \t\r\n\t\t\t            \r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t\r\n\t\t</ul>\t\t\t\r\n\t\t\r\n\r\n\r\n\t\t\t</div>\r\n\t\t</div>\r\n\r\n\t\t<!--
-        End Masthead navbar -->\r\n\r\n\r\n\t\t<div id=\"content\">\r\n\r\n\t\t\t<div
-        class=\"container\" id=\"content-container\">\r\n\r\n\t\t\t\t<div class=\"row\"
-        id=\"main-row\">\r\n\r\n\t\t\t\t\t<div class=\"col-sm-3\" id=\"bstrap-leftnav\">\r\n\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<div
-        id=\"search-results\" >\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t</div>  \r\n\t\t\t\t\t\t\r\n\r\n\r\n\t\t\t\t\t\t<div
-        id=\"admin-tabs\" >\r\n\t\t\t\t\t\t\t<div id=\"dashboard\" class=\"tabs-content\">\r\n\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\r\n\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<!--
-        START MENU CONTENT -->\r\n\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t<div
-        id=\"menus-toggle\">\r\n\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div
-        id=\"menus-button\" class=\"btn btn-default\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span
-        id=\"menus-button-inner\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a id=\"menus-button-link\"
-        href=\"#\">Hide Menus</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t<div
-        id=\"site-access\" class=\"menu-on\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<ul
-        id=\"siteaccesspanel\">\r\n\r\n\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\t\r\n\t\r\n\t\r\n\t\r\n\t\r\n\t\t<li
-        id=\"siteaccesspanel_1\">\r\n\t\t\t<div class=\"menu-group\">\r\n\t\t\t\t<div
-        class=\"menu-header-panel\" title=\"Drag to change panel order\">\r\n\t\t\t\t\t<h3
-        class=\"panel-handle\">Menu</h3>\r\n\t\t\t\t</div>\r\n\t\t\t\t<p class=\"menu-handlers\">\r\n\t\t\t\t\r\n\t\t\t\t<a
-        href=\"/eservice/menu/minimisePanel.do?id=1\" title=\"Minimise Panel\" class=\"panel-min-max\"
-        id=\"panel-min-max-1\" >\r\n<img src=\"/eservice/icons/minimise.gif\" alt=\"Minimise\"
-        />\r\n</a>\r\n\r\n\t\t\t\t</p>\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t<div
-        id=\"menu-search\">\r\n\t\t\t\t\t\t\t<form action=\"/eservice/menu/search.do\"
-        class=\"menu-search-form\">\r\n\t\t\t\t\t\t\t\t<p>\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<input
-        type=\"text\" size=\"15\" name=\"search\" id=\"search\" class=\"field\"  value=\"Menu
-        Search\" />\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<input type=\"submit\"
-        id=\"menu-search-submit\" value=\"Go\" class=\"buttonCalendar\" />\r\n\t\t\t\t\t\t\t\t<img
-        src=\"/eservice/icons/loading.gif\" alt=\"loading\" class=\"loading\" id=\"menu-search-loading\"
-        />\r\n\t\t\t\t\t\t\t\t</p>\r\n\t\t\t\t\t\t\t\t<!-- div id=\"search-autocomplete\"
-        class=\"autocompleter\"></div -->\r\n\t\t\t\t\t\t\t</form>\r\n\t\t\t\t\t\t\t<div
-        id=\"search-results\" >\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\r\n\t\t\t<div
-        id=\"scrollingMenuContainer\" class=\"scrolling-container\">\r\n\t\t\t\t<ul
-        id=\"navigation\">\r\n\t\t\t\t\t\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\t\r\n\t\t\r\n\t\t\r\n\t\t\t<li
-        class=\"nav-return\" title=\"Back one menu level\"><a href=\"/eservice/navigationStart.do\"
-        id=\"node-0\"><img src=\"/eservice/icons/parent.gif\" alt=\"Return to \" />Development
-        Applications                          </a></li>\r\n\t\t\r\n\t\r\n\r\n\t\r\n\r\n\t\r\n\t\t\r\n\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\r\n
-        \       \r\n    \t    <li class='java'>\r\n    \t\r\n\t       <a href=\"/eservice/denquiryInit.do?doc_type=11&nodeNum=101\"
-        class=\"linkitem\" id=\"node-101\">Construction Certificates</a>\r\n        </li>\r\n
-        \ \r\n\t\t\r\n\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\r\n        \r\n    \t    <li
-        class='java'>\r\n    \t\r\n\t       <a href=\"/eservice/denquiryInit.do?doc_type=12&nodeNum=102\"
-        class=\"linkitem\" id=\"node-102\">Complying Development Certificates</a>\r\n
-        \       </li>\r\n  \r\n\t\t\r\n\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\r\n        \r\n
-        \   \t    <li class='java'>\r\n    \t\r\n\t       <a href=\"/eservice/determinedDAs.do?num_days=60&nodeNum=156\"
-        class=\"linkitem\" id=\"node-156\">Recently Determined Development Applications</a>\r\n
-        \       </li>\r\n  \r\n\t\t\r\n\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\r\n        \r\n
-        \   \t    <li class='java'>\r\n    \t\r\n\t       <a href=\"/eservice/daEnquiryInit.do?nodeNum=24&nodeNum=147757\"
-        class=\"linkitem\" id=\"node-147757\">Development Application Enquiry</a>\r\n
-        \       </li>\r\n  \r\n\r\n\r\n\r\n\t\t\t\t</ul>\r\n\t\t\t</div>\r\n\t\t\t\r\n\t\t\t
-        \r\n\t\t\t</div>\r\n\t\t</li>\r\n\t\r\n\r\n\r\n\t\r\n\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\r\n\r\n\t\t\t\r\n\r\n\t\t\t\r\n\t\t\t\t\r\n\t\t\t\r\n\r\n\t\t\t\r\n\r\n\t\r\n\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\r\n\r\n\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\t\r\n\r\n\t\r\n\t\r\n\t\t\t<li
-        id=\"siteaccesspanel_3\">\r\n\t\t\t\t<div class=\"menu-group\">\r\n\t\t\t\t\t<div
-        class=\"menu-header-panel\" title=\"Drag to change panel order\">\r\n\t\t\t\t\t\t<h3
-        class=\"panel-handle\">History</h3>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<p class=\"menu-handlers\">\r\n\t\t\t\t\t\r\n\t\t\t\t\t<a
-        href=\"/eservice/menu/movePanel.do?id=2\" title=\"Panel Up\" class=\"panel-up\">\r\n\t\t\t\t\t\t\t\t\t\t<img
-        src=\"/eservice/icons/panel_move_up.gif\" alt=\"Up\" /></a>\r\n\t\t\t\t\t\r\n\t\t\t\t\t<a
-        href=\"/eservice/menu/minimisePanel.do?id=2\" title=\"Minimise Panel\" class=\"panel-min-max\"
-        id=\"panel-min-max-2\" >\r\n<img src=\"/eservice/icons/minimise.gif\" alt=\"Minimise\"
-        />\r\n</a>\r\n\r\n\t\t\t\t\t</p>\r\n\r\n\t\t\t\t\t\r\n\t\t\t\t\t<ul id=\"recently-used\">\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<li
-        id=\"recently-used-0\">\r\n                                <a href=\"/eservice/daEnquiryInit.do?nodeNum=24\"
-        class=\"linkitem\">Development Applications</a>\r\n                                \r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t\t\r\n\t\t\t\t</div>\r\n\t\t\t</li>\r\n\t\r\n\r\n\r\n\t\t\t\r\n\r\n\t\t\t\r\n\t\t\t\t\r\n\t\t\t\r\n\r\n\t\t\t\r\n\r\n\t\r\n</ul>\r\n<script
-        type=\"text/javascript\">\r\n\t//Drag n Drop panels\r\n\tSortable.create('siteaccesspanel',
-        {handle: 'panel-handle', onUpdate:function(){new Ajax.Request(webContextPath
-        + '/resequencePanels.do', {method: 'post', parameters:Sortable.serialize('siteaccesspanel')})}});\r\n</script>\r\n\r\n<p
-        id=\"scroll-trigger\">15</p>\r\n<p id=\"alternate-scroll-trigger\"></p>\r\n<p
-        id=\"pixel-height-base-rate-for-list-item\">24</p>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div
-        class=\"col-sm-9\" id=\"bstrap-main\">\r\n\t\t\t\t\t\t<div id=\"main-content\">\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<div
-        class=\"transaction-area\" id=\"transaction-area\"></div>\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<!--
-        END MENU CONTENT -->\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<div class=\"unique-content\"
-        id=\"daEnquiry_daEnquiryResults\">\r\n<div class=\"daEnquirySpecific\" id=\"daEnquiry_daEnquiryResultsDocumentTypeDefaultTypes\">\r\n\r\n\t\t\t\t\t\t\t\t\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\t\r\n\t\r\n\t\t\r\n\t\t<h1
-        class=\"functionHeader\">\r\n\t\t\t\r\n          \r\n          \r\n              Development
-        Application Enquiry\r\n          \r\n\t\r\n\t\t\t\r\n\t\t</h1>\r\n\t\r\n\t\r\n\t<div
-        id=\"fullcontent\" class=\"no_form\">\r\n\t\r\n\t\r\n\r\n\r\n\t\t\r\n\r\n\r\n\r\n\r\n\r\n<div
-        class=\"infopanel\">    \r\n\t<!-- CIVICA-INFO-START -->   \r\n\t\r\n        <div
-        id=\"infopanel-header\">\r\n\t        <h4 class=\"entryHeader\" >\r\n\t            Instructions\r\n\t
-        \       </h4>\r\n        </div>\r\n\t\r\n    <div id=\"instructions-content\"
-        class=\"instructions\">\r\n\r\n        \r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\t\r\n\t\r\n\t\r\n
-        \     Click on the Development Application to see further detail. To display
-        these results in a different order, select from the options below and click
-        the 'Sort' button.\t\r\n\t      \t\r\n\t   \t  \r\n\t         <p><label>Documents
-        Found&nbsp;43</label></p>      \r\n\t   \r\n\t   \r\n\t    \r\n\t\t\t  <div
-        id=\"sortForm\">\r\n\t\t\t  \t\r\n\t\t      \t\t<form name=\"registerEnquirySortForm\"
-        method=\"post\" action=\"/eservice/daEnquirySort.do\">\r\n\t\t\t\t\t\t<fieldset>\r\n\t\t\t\t
-        \ \t\t\t<legend>Sort</legend>\r\n\t\t\t\t  \t\t\t\r\n\t\t\t\t  \t\t\t\t\r\n\t\t\t\t\t\t\t\t<span
-        id=\"sortByDatereceivedOption\">\r\n\t\t\t\t  \t\t\t\t\t<input type=\"radio\"
-        name=\"sortBy\" value=\"1\" id=\"sortByDatereceived\" />\r\n\t\t\t\t  \t\t\t\t\t<label
-        class=\"nobold\" for=\"sortByDatereceived\">\r\n\t\t\t\t  \t\t\t\t\t\tReceived
-        Date\r\n\t\t\t\t  \t\t\t\t\t</label>\r\n\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t
-        \ \t\t\t\r\n\t\t\t\t  \t\t\t\t\r\n\t\t\t\t\t\t\t\t<span id=\"sortByLocationOption\">\r\n\t\t\t\t
-        \ \t\t\t\t\t<input type=\"radio\" name=\"sortBy\" value=\"2\" id=\"sortByLocation\"
-        checked/>\r\n\t\t\t\t  \t\t\t\t\t<label class=\"nobold\" for=\"sortByLocation\">\r\n\t\t\t\t
-        \ \t\t\t\t\t\tLocation\r\n\t\t\t\t  \t\t\t\t\t</label>\r\n\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t
-        \ \t\t\t\r\n\t\t\t\t  \t\t\t\t\r\n\t\t\t\t\t\t\t\t<span id=\"sortByApplicationNumberOption\">\r\n\t\t\t\t
-        \ \t\t\t\t\t<input type=\"radio\" name=\"sortBy\" value=\"3\" id=\"sortByApplicationNumber\"
-        />\r\n\t\t\t\t  \t\t\t\t\t<label class=\"nobold\" for=\"sortByApplicationNumber\">\r\n\t\t\t\t
-        \ \t\t\t\t\t\tApplication No.\r\n\t\t\t\t  \t\t\t\t\t</label>\r\n\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t
-        \ \t\t\t\r\n\t\t\t\t  \t\t\t\t\r\n\t\t\t\t\t\t\t\t<span id=\"sortBySuburbOption\">\r\n\t\t\t\t
-        \ \t\t\t\t\t<input type=\"radio\" name=\"sortBy\" value=\"4\" id=\"sortBySuburb\"
-        />\r\n\t\t\t\t  \t\t\t\t\t<label class=\"nobold\" for=\"sortBySuburb\">\r\n\t\t\t\t
-        \ \t\t\t\t\t\tSuburb\r\n\t\t\t\t  \t\t\t\t\t</label>\r\n\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t
-        \ \t\t\t\r\n\t\t\t\t  \t\t\t\t\r\n\t\t\t\t\t\t\t\t<span id=\"sortByUnitHouseNumberOption\">\r\n\t\t\t\t
-        \ \t\t\t\t\t<input type=\"radio\" name=\"sortBy\" value=\"5\" id=\"sortByUnitHouseNumber\"
-        />\r\n\t\t\t\t  \t\t\t\t\t<label class=\"nobold\" for=\"sortByUnitHouseNumber\">\r\n\t\t\t\t
-        \ \t\t\t\t\t\tUnit/House Number\r\n\t\t\t\t  \t\t\t\t\t</label>\r\n\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t
-        \ \t\t\t\r\n\t\t\t\t  \t\t\t\t\r\n\t\t\t\t\t\t\t\t<span id=\"sortByStreetNameOption\">\r\n\t\t\t\t
-        \ \t\t\t\t\t<input type=\"radio\" name=\"sortBy\" value=\"6\" id=\"sortByStreetName\"
-        />\r\n\t\t\t\t  \t\t\t\t\t<label class=\"nobold\" for=\"sortByStreetName\">\r\n\t\t\t\t
-        \ \t\t\t\t\t\tStreet\r\n\t\t\t\t  \t\t\t\t\t</label>\r\n\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t
-        \ \t\t\t\r\n\t\t\t\t  \t\t\t\t\r\n\t\t\t\t\t\t\t\t<span id=\"sortBySummaryOption\">\r\n\t\t\t\t
-        \ \t\t\t\t\t<input type=\"radio\" name=\"sortBy\" value=\"7\" id=\"sortBySummary\"
-        />\r\n\t\t\t\t  \t\t\t\t\t<label class=\"nobold\" for=\"sortBySummary\">\r\n\t\t\t\t
-        \ \t\t\t\t\t\tType Of Work\r\n\t\t\t\t  \t\t\t\t\t</label>\r\n\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t
-        \ \t\t\t\r\n\t\t\t\t  \t\t\t\t\r\n\t\t\t\t\t\t\t\t<span id=\"sortByDeterminationOption\">\r\n\t\t\t\t
-        \ \t\t\t\t\t<input type=\"radio\" name=\"sortBy\" value=\"8\" id=\"sortByDetermination\"
-        />\r\n\t\t\t\t  \t\t\t\t\t<label class=\"nobold\" for=\"sortByDetermination\">\r\n\t\t\t\t
-        \ \t\t\t\t\t\tDecision\r\n\t\t\t\t  \t\t\t\t\t</label>\r\n\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t
-        \ \t\t\t\r\n\t\t\t\t  \t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t\t  \t<input
-        type=\"submit\" name=\"submit\" value=\"Sort\" class=\"button\" />\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</fieldset>\r\n\t\t\t
-        \ \t\t</form>\r\n\t\t\t  \t\r\n\t\t\t  </div>\r\n\t  \r\n\t\r\n\t\r\n\t\r\n\r\n
-        \   </div>\r\n\r\n\t<!-- CIVICA-INFO-END -->\r\n</div>\r\n\r\n\r\n\t\t\r\n\t\t\t\r\n\t\t\r\n<div
-        \ class=\"bodypanel\" id=\"bodypanel1\">\r\n\t<!-- CIVICA-CONTENT-START:bodypanel1
-        -->\r\n\t\t</div>\r\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div><h4
-        class=\"non_table_headers\"><a class=\"plain_header\" href=\"/eservice/daEnquiryDetails.do?index=0\">207
-        Anson Street ORANGE  NSW  2800</a></h4><div><p class=\"rowDataOnly\"><span
-        class=\"key\">Type of Work</span><span class=\"inputField\">Shop (new shopfront)
-        (Michael Hill)</span></p><p class=\"rowDataOnly\"><span class=\"key\">Applicant</span><span
-        class=\"inputField\">Woodland Shopfitting</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Certifier</span><span class=\"inputField\">Checkpoint Building
-        Surveyors</span></p><p class=\"rowDataOnly\"><span class=\"key\">Application
-        No.</span><span class=\"inputField\">127/2019</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Date Lodged</span><span class=\"inputField\">03/05/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$25,640.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">22/05/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=1\">6 Astill Drive ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Research Facility (car park)</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Applicant</span><span class=\"inputField\">Newcrest Mining Ltd</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span class=\"inputField\">Orange
-        City Council</span></p><p class=\"rowDataOnly\"><span class=\"key\">Application
-        No.</span><span class=\"inputField\">111/2019</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Date Lodged</span><span class=\"inputField\">17/04/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$45,000.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">22/05/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=2\">90 Bathurst Road ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Signage (digital screen)</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Applicant</span><span class=\"inputField\">Phoenix Signs, C/-
-        KDC Pty Ltd</span></p><p class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span
-        class=\"inputField\">To Be Advised</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Application No.</span><span class=\"inputField\">130/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">07/05/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$6,750.00</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=3\">3 Braemar Circuit ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Garage</span></p><p class=\"rowDataOnly\"><span class=\"key\">Applicant</span><span
-        class=\"inputField\">Mr N D McKenzie,Ms K M McKenzie</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Certifier</span><span class=\"inputField\">Mr GW Drewe</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Application No.</span><span class=\"inputField\">109/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">16/04/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$11,860.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">07/05/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=4\">10 Brookfield Way ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Dwelling Alterations and Additions (patio cover)</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Applicant</span><span class=\"inputField\">Picton
-        Bros Improvements</span></p><p class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span
-        class=\"inputField\">Orange City Council</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Application No.</span><span class=\"inputField\">120/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">30/04/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$10,500.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">07/05/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=5\">85 Buckland Drive ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Retaining Walls</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Applicant</span><span class=\"inputField\">GJ Gardner Homes,
-        Orange</span></p><p class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span
-        class=\"inputField\">To Be Advised</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Application No.</span><span class=\"inputField\">123/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">02/05/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$15,319.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">13/06/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=6\">105 Buckland Drive ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Dwelling and Attached Garage</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Applicant</span><span class=\"inputField\">Mr A O Osorio,Mrs
-        E K Osorio</span></p><p class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span
-        class=\"inputField\">Mr GW Drewe</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Application No.</span><span class=\"inputField\">125/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">03/05/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$344,206.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">21/05/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=7\">30 Cecil Road ORANGE  NSW  2800</a></h4><div><p
-        class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span class=\"inputField\">Demolition
-        (existing shed), Garage and Attached Carport</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Applicant</span><span class=\"inputField\">Mr B Coulson,Ms M
-        M Brown</span></p><p class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span
-        class=\"inputField\">Orange City Council</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Application No.</span><span class=\"inputField\">135/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">09/05/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$19,700.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">27/05/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=8\">10 Cedar Street ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Dwelling, Attached Garage and Spa</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Applicant</span><span class=\"inputField\">Mrs F Grant</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span class=\"inputField\">To
-        Be Advised</span></p><p class=\"rowDataOnly\"><span class=\"key\">Application
-        No.</span><span class=\"inputField\">107/2019</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Date Lodged</span><span class=\"inputField\">16/04/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$570,000.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">24/06/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=9\">16 Cedar Street ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Dwelling (two storey) and Attached Garage</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Applicant</span><span class=\"inputField\">Mr
-        D White</span></p><p class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span
-        class=\"inputField\">To Be Advised</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Application No.</span><span class=\"inputField\">113/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">18/04/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$800,000.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">12/06/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=10\">4 Charlotte Street ORANGE
-        \ NSW  2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type
-        of Work</span><span class=\"inputField\">Garage</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Applicant</span><span class=\"inputField\">Mr Z J Marr</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span class=\"inputField\">To
-        Be Advised</span></p><p class=\"rowDataOnly\"><span class=\"key\">Application
-        No.</span><span class=\"inputField\">115/2019</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Date Lodged</span><span class=\"inputField\">24/04/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$12,225.00</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=11\">260 Clergate Road ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Extractive Industry (Pad 1)</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Applicant</span><span class=\"inputField\">DCLD Investments
-        Pty Ltd</span></p><p class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span
-        class=\"inputField\">To Be Advised</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Application No.</span><span class=\"inputField\">139/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">13/05/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$100,000.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">31/05/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=12\">6 Connemara Drive ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Subdivision (two lot residential)</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Applicant</span><span class=\"inputField\">Mr J Saran</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span class=\"inputField\">To
-        Be Advised</span></p><p class=\"rowDataOnly\"><span class=\"key\">Application
-        No.</span><span class=\"inputField\">128/2019</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Date Lodged</span><span class=\"inputField\">06/05/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$0.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">12/06/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=13\">16 Crinoline Street ORANGE
-        \ NSW  2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type
-        of Work</span><span class=\"inputField\">Dwelling Alterations and Additions
-        (carport)</span></p><p class=\"rowDataOnly\"><span class=\"key\">Applicant</span><span
-        class=\"inputField\">Mr J Davis</span></p><p class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span
-        class=\"inputField\">Orange City Council</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Application No.</span><span class=\"inputField\">116/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">26/04/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$8,975.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">06/05/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=14\">97 Dean Drive ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Outbuilding (garage/shed)</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Applicant</span><span class=\"inputField\">Mr R C White</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span class=\"inputField\">Orange
-        City Council</span></p><p class=\"rowDataOnly\"><span class=\"key\">Application
-        No.</span><span class=\"inputField\">110/2019</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Date Lodged</span><span class=\"inputField\">16/04/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$30,000.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">02/05/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=15\">388 Forest Road ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Garage</span></p><p class=\"rowDataOnly\"><span class=\"key\">Applicant</span><span
-        class=\"inputField\">Mr G Attenborough,Mrs N L Attenborough</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Certifier</span><span class=\"inputField\">Orange City Council</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Application No.</span><span class=\"inputField\">35/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">15/04/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$36,000.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">16/04/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=16\">614 Forest Road ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Outbuilding (garage/workshop) and Rainwater Tank (110,000L)</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Applicant</span><span class=\"inputField\">Mr
-        C R Wilkinson,Mrs N D Wilkinson</span></p><p class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span
-        class=\"inputField\">To Be Advised</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Application No.</span><span class=\"inputField\">108/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">16/04/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$41,300.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">06/05/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=17\">130 Gardiner Road ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Dwelling Alterations and Additions</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Applicant</span><span class=\"inputField\">Mr P T Roberts</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span class=\"inputField\">Orange
-        City Council</span></p><p class=\"rowDataOnly\"><span class=\"key\">Application
-        No.</span><span class=\"inputField\">129/2019</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Date Lodged</span><span class=\"inputField\">06/05/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$85,000.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Completed</span></p><p class=\"rowDataOnly\"><span class=\"key\">Determination
-        Date</span><span class=\"inputField\">01/07/2019</span></p></div><p class=\"rowDataOnly\">
-        </p><h4 class=\"non_table_headers\"><a class=\"plain_header\" href=\"/eservice/daEnquiryDetails.do?index=18\">83
-        Glasson Drive ORANGE  NSW  2800</a></h4><div><p class=\"rowDataOnly\"><span
-        class=\"key\">Type of Work</span><span class=\"inputField\">Garage</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Applicant</span><span class=\"inputField\">Mr
-        M S Morrissey,Mrs J Morrissey</span></p><p class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span
-        class=\"inputField\">Orange City Council</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Application No.</span><span class=\"inputField\">131/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">07/05/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$8,500.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">20/05/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=19\">84 Glenroi Avenue ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Pub (alterations and additions - beer garden pergola)</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Applicant</span><span class=\"inputField\">Ophir
-        Tavern Business Pty Ltd</span></p><p class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span
-        class=\"inputField\">To Be Advised</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Application No.</span><span class=\"inputField\">142/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">15/05/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$40,000.00</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=20\">6 Handford Place ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Dual Occupancy (detached) and Subdivision (two lot Torrens
-        title)</span></p><p class=\"rowDataOnly\"><span class=\"key\">Applicant</span><span
-        class=\"inputField\">Zhang Building &amp; Development Pty Ltd</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span class=\"inputField\">To
-        Be Advised</span></p><p class=\"rowDataOnly\"><span class=\"key\">Application
-        No.</span><span class=\"inputField\">140/2019</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Date Lodged</span><span class=\"inputField\">14/05/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$350,000.00</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=21\">27 Kamdell Place ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Dwelling Alterations (enclose front verandah)</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Applicant</span><span class=\"inputField\">4
-        Arrows Pty Ltd</span></p><p class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span
-        class=\"inputField\">Orange City Council</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Application No.</span><span class=\"inputField\">119/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">29/04/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$11,000.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">08/05/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=22\">Lantana Place ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Multi Dwelling Housing (10 dwellings)</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Applicant</span><span class=\"inputField\">Housing Plus</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span class=\"inputField\">To
-        Be Advised</span></p><p class=\"rowDataOnly\"><span class=\"key\">Application
-        No.</span><span class=\"inputField\">141/2019</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Date Lodged</span><span class=\"inputField\">14/05/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$2,750,000.00</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=23\">346 Leeds Parade ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Educational Establishment (new building, alterations
-        and additions to existing building and solar energy system (photovoltaic electricity
-        generating system)</span></p><p class=\"rowDataOnly\"><span class=\"key\">Applicant</span><span
-        class=\"inputField\">Charles Sturt University, C/- Premise NSW Pty Ltd</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span class=\"inputField\">To
-        Be Advised</span></p><p class=\"rowDataOnly\"><span class=\"key\">Application
-        No.</span><span class=\"inputField\">118/2019</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Date Lodged</span><span class=\"inputField\">29/04/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$10,213,000.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by JRPP</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">28/06/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=24\">6 Linden Avenue ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Pool Deck and Fencing</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Applicant</span><span class=\"inputField\">Mr LJ Alchin,Mrs
-        B A Alchin</span></p><p class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span
-        class=\"inputField\">Mr GW Drewe</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Application No.</span><span class=\"inputField\">122/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">01/05/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$96,498.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">06/06/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=25\">15-41 Lords Place ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Depot (storage shed and on-site pavement modification)</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Applicant</span><span class=\"inputField\">Essential
-        Energy</span></p><p class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span
-        class=\"inputField\">To Be Advised</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Application No.</span><span class=\"inputField\">112/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">17/04/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$168,300.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">19/06/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=26\">10 Martin Place ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Garage Additions (carport)</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Applicant</span><span class=\"inputField\">Mr SJ Callaghan</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span class=\"inputField\">Orange
-        City Council</span></p><p class=\"rowDataOnly\"><span class=\"key\">Application
-        No.</span><span class=\"inputField\">126/2019</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Date Lodged</span><span class=\"inputField\">03/05/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$4,626.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">03/06/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=27\">8 Ophir Street ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Dwelling Alterations and Additions and Detached Carport</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Applicant</span><span class=\"inputField\">Mr
-        ND Dickson</span></p><p class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span
-        class=\"inputField\">To Be Advised</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Application No.</span><span class=\"inputField\">382/2018</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">14/05/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$140,000.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">28/05/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=28\">81 Peisley Street ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Health Consulting Rooms and Associated Signage (change
-        of use)</span></p><p class=\"rowDataOnly\"><span class=\"key\">Applicant</span><span
-        class=\"inputField\">Mr C S Booth</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Certifier</span><span class=\"inputField\">To Be Advised</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Application No.</span><span class=\"inputField\">124/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">02/05/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$30,000.00</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=29\">167-177 Peisley Street ORANGE
-        \ NSW  2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type
-        of Work</span><span class=\"inputField\">Shop (alterations and additions to
-        existing building)</span></p><p class=\"rowDataOnly\"><span class=\"key\">Applicant</span><span
-        class=\"inputField\">Stimson and Baker Planning</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Certifier</span><span class=\"inputField\">To Be Advised</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Application No.</span><span class=\"inputField\">42/2018</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">15/05/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$1,364,000.00</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=30\">892 Pinnacle Road CANOBOLAS
-        \ NSW  2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type
-        of Work</span><span class=\"inputField\">Outbuilding (farm shed)</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Applicant</span><span class=\"inputField\">Mr
-        SJ Alford</span></p><p class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span
-        class=\"inputField\">Orange City Council</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Application No.</span><span class=\"inputField\">132/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">07/05/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$58,000.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">03/06/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=31\">512. Pinnacle Road ORANGE
-        \ NSW  2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type
-        of Work</span><span class=\"inputField\">Subdivision (two lot rural residential)
-        (concessional lot))</span></p><p class=\"rowDataOnly\"><span class=\"key\">Applicant</span><span
-        class=\"inputField\">Mr M and Mrs B Crombie</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Certifier</span><span class=\"inputField\">To Be Advised</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Application No.</span><span class=\"inputField\">581/2002</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">01/05/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$0.00</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=32\">76 Prince Street ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Neighbourhood Shop (alterations and additions), Medical
-        Centre, Demolition (existing dwelling) and Business Identification Signage</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Applicant</span><span class=\"inputField\">Designs@m</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span class=\"inputField\">To
-        Be Advised</span></p><p class=\"rowDataOnly\"><span class=\"key\">Application
-        No.</span><span class=\"inputField\">431/2016</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Date Lodged</span><span class=\"inputField\">24/04/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$385,000.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">17/05/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=33\">Scarborough Street ORANGE
-        \ NSW  2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type
-        of Work</span><span class=\"inputField\">Subdivision (93 lot residential)</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Applicant</span><span class=\"inputField\">Icewand
-        Pty Ltd</span></p><p class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span
-        class=\"inputField\">Orange City Council</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Application No.</span><span class=\"inputField\">431/2012</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">29/04/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$0.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">01/07/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=34\">11 Scarborough Street ORANGE
-        \ NSW  2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type
-        of Work</span><span class=\"inputField\">Garage</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Applicant</span><span class=\"inputField\">Mr S C Messina</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span class=\"inputField\">Orange
-        City Council</span></p><p class=\"rowDataOnly\"><span class=\"key\">Application
-        No.</span><span class=\"inputField\">136/2019</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Date Lodged</span><span class=\"inputField\">09/05/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$12,500.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">20/05/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=35\">2 Spring Street SPRING HILL
-        \ NSW  2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type
-        of Work</span><span class=\"inputField\">Dwelling Alterations and Additions
-        (carport)</span></p><p class=\"rowDataOnly\"><span class=\"key\">Applicant</span><span
-        class=\"inputField\">Mr NA Maguire</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Certifier</span><span class=\"inputField\">Orange City Council</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Application No.</span><span class=\"inputField\">121/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">01/05/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$9,000.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Withdrawn</span></p><p class=\"rowDataOnly\"><span class=\"key\">Determination
-        Date</span><span class=\"inputField\">13/06/2019</span></p></div><p class=\"rowDataOnly\">
-        </p><h4 class=\"non_table_headers\"><a class=\"plain_header\" href=\"/eservice/daEnquiryDetails.do?index=36\">7
-        Stevenson Way ORANGE  NSW  2800</a></h4><div><p class=\"rowDataOnly\"><span
-        class=\"key\">Type of Work</span><span class=\"inputField\">Dwelling Alterations
-        and Additions (deck and patio cover), Garage (detached) and Retaining Wall</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Applicant</span><span class=\"inputField\">4
-        Arrows Pty Ltd</span></p><p class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span
-        class=\"inputField\">Orange City Council</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Application No.</span><span class=\"inputField\">133/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">09/05/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$56,000.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">05/06/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=37\">48 Stevenson Way ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Dwelling, Attached Garage, Attached Carport and Retaining
-        Wall</span></p><p class=\"rowDataOnly\"><span class=\"key\">Applicant</span><span
-        class=\"inputField\">Contemporary Homes</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Certifier</span><span class=\"inputField\">To Be Advised</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Application No.</span><span class=\"inputField\">134/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">09/05/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$356,900.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">28/05/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=38\">212-220 Summer Street ORANGE
-        \ NSW  2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type
-        of Work</span><span class=\"inputField\">Shop and Business Identification
-        Signage (first use and fit-out)</span></p><p class=\"rowDataOnly\"><span class=\"key\">Applicant</span><span
-        class=\"inputField\">CPRAM Investments Pty Ltd</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Certifier</span><span class=\"inputField\">Orange City Council</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Application No.</span><span class=\"inputField\">138/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">13/05/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$227,500.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">26/06/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=39\">86 Turner Crescent ORANGE
-        \ NSW  2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type
-        of Work</span><span class=\"inputField\">Garage</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Applicant</span><span class=\"inputField\">Mr M W Turner,Mrs
-        B J Turner</span></p><p class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span
-        class=\"inputField\">Mr GW Drewe</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Application No.</span><span class=\"inputField\">137/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">10/05/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$15,000.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">05/06/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=40\">114 William Maker Drive ORANGE
-        \ NSW  2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type
-        of Work</span><span class=\"inputField\">Dwelling and Attached Garage</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Applicant</span><span class=\"inputField\">DWP
-        Homes</span></p><p class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span
-        class=\"inputField\">Mr D Richardson</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Application No.</span><span class=\"inputField\">114/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">24/04/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$449,950.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">14/05/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=41\">5 Winter Street ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Dwelling Alterations and Additions (carport)</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Applicant</span><span class=\"inputField\">Mrs
-        C Torrisi</span></p><p class=\"rowDataOnly\"><span class=\"key\">Certifier</span><span
-        class=\"inputField\">Orange City Council</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Application No.</span><span class=\"inputField\">117/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">26/04/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$15,500.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">04/06/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><h4 class=\"non_table_headers\"><a class=\"plain_header\"
-        href=\"/eservice/daEnquiryDetails.do?index=42\">4 Yaraan Place ORANGE  NSW
-        \ 2800</a></h4><div><p class=\"rowDataOnly\"><span class=\"key\">Type of Work</span><span
-        class=\"inputField\">Dwelling (two storey), Attached Garage, Retaining Walls
-        and Tree Removal (5)</span></p><p class=\"rowDataOnly\"><span class=\"key\">Applicant</span><span
-        class=\"inputField\">Mr A Abraham</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Certifier</span><span class=\"inputField\">To Be Advised</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Application No.</span><span class=\"inputField\">217/2018</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Date Lodged</span><span class=\"inputField\">23/04/2019</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Cost of Work</span><span class=\"inputField\">$676,000.00</span></p><p
-        class=\"rowDataOnly\"><span class=\"key\">Determination Details</span><span
-        class=\"inputField\">Approved by Delegated Authority</span></p><p class=\"rowDataOnly\"><span
-        class=\"key\">Determination Date</span><span class=\"inputField\">23/05/2019</span></p></div><p
-        class=\"rowDataOnly\"> </p><div class=\"button-panel\"><a class=\"btn btn-primary\"
-        href=\"/eservice/daEnquiryInit.do?nodeNum=24&amp;goingBack=true\">New Search</a></div></div>\r\n<div>\r\n\r\n\t<!--
-        CIVICA-CONTENT-END:bodypanel1 -->\r\n</div>\r\n\r\n\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n</div>\r\n\t\t\t\t\t\t\t</div>\r\n</div>\r\n
-        \    \r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t</div>\r\n\t\t\t</div>
-        <!-- container -->\r\n\t\t</div> <!-- content -->\r\n\r\n\t\t<div id=\"bottom\"
-        class=\"tabbed\">\r\n\t\t\t<div class=\"container\" id=\"bottom-container\">\r\n\t\t\t\t<div
-        class=\"row\">\r\n\t\t\t\t\t\r\n\t\t\t\t\t<div class=\"footer\">\r\n\t\t\t\t\t\t<p>&#169;
-        Civica Pty. Ltd. 2016\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t</p>\r\n\t\t\t\t\t\t<p
-        id=\"web-context-path\">/eservice</p>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<!--
-        End page div -->\r\n\r\n\r\n\t\r\n\r\n<!-- End Bootstrap eServices -->\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<!--
-        iServices -->\r\n\r\n\t</body>\r\n</html>\r\n\r\n"
-    http_version: 
-  recorded_at: Tue, 14 May 2019 14:00:00 GMT
-recorded_with: VCR 5.0.0
+  recorded_at: Mon, 27 Jan 2025 13:00:00 GMT
+recorded_with: VCR 6.0.0

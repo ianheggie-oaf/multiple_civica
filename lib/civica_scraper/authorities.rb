@@ -2,6 +2,8 @@
 
 module CivicaScraper
   AUTHORITIES = {
+    # Authorities are in alphabetical order so that they're easier to find in this long list
+    # When adding a new authority make sure to keep the alphabetical ordering
     bayside: {
       url: "https://ecouncil.bayside.vic.gov.au/eservice/daEnquiryInit.do?docType=5&nodeNum=480394",
       period: :last30days

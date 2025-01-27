@@ -6,6 +6,9 @@ require "rspec/core/rake_task"
 require "watir"
 require "civica_scraper"
 require "mini_magick"
+require "fileutils"
+
+Dir.glob('lib/tasks/*.rake').each { |r| load r }
 
 RSpec::Core::RakeTask.new(:spec)
 
@@ -32,4 +35,14 @@ task :screenshots do
   CivicaScraper::AUTHORITIES.each do |k, _v|
     File.delete("screenshots/#{k}.png")
   end
+end
+
+desc "Clobber cache of external site responses"
+task :clobber_cache do
+  puts "Clobbering cache of external site responses ..."
+  FileUtils.rm_f(Dir.glob("spec/cassettes/*"))
+  puts "Clobbering expected records from external sites ..."
+  FileUtils.rm_f(Dir.glob("spec/expected/*"))
+  puts "Clobbering vcr recording date so it will be recreated next time specs are run"
+  FileUtils.rm_f("spec/vcr_date.txt")
 end
